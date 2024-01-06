@@ -1,0 +1,43 @@
+@import './base.css';
+
+ 
+.audio-recorder {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.controls button, .decoding button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.controls button[disabled], .decoding button[disabled] {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.audio-player, .decoding {
+  margin-top: 20px;
+}
+
+.decoding audio {
+  margin-top: auto;
+}
+
+.transition-fade-enter-active, .transition-fade-leave-active {
+  transition: opacity 0.5s; /* Set the transition duration */
+}
+
+.transition-fade-enter, .transition-fade-leave-to /* .transition-fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
