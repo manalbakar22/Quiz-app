@@ -35,7 +35,7 @@
           <router-link
                   class="nav-link abril whitespace-nowrap"
                   :to="{ name: 'quiz' }"
-                  >QUIZ
+                  >TAKE QUIZ
           </router-link>
       </li>
       <li class="mx-2 nav-item">
@@ -53,15 +53,15 @@
                   >MANAGE
           </router-link>
       </li>
+      <li class="mx-2 nav-item">
+        <router-link
+                  class="nav-link abril whitespace-nowrap"
+                  :to="{ name: 'contact' }"
+                  >CONTACT US
+          </router-link>
+      </li>
     </ul>
-    <form class="mx-5 form-inline my-2 my-lg-0 ">
-      <div class="mx-5">
-        <div class="mx-2 d-flex align-items-center">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="mx-5 btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </div>
-    </div>
-    </form>
+
     
   </div>
 </nav>

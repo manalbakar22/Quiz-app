@@ -5,6 +5,8 @@ import Quiz from '../components/quiz.vue';
 import CreateQuiz from '../components/createquiz.vue';
 import Audio from '../components/audio.vue';
 import Manage from '../components/manage.vue';
+import Costum_quiz from '../components/costum_quiz.vue';
+import Contact from '../components/contact.vue';
 
 
 
@@ -51,7 +53,19 @@ const router = createRouter({
       name: 'createquiz',
       component: CreateQuiz
     },
-  ]
+    {
+      path: '/costumize',
+      name: 'costumize',
+      component: Costum_quiz,
+    },
+    {
+    path: '/contact',
+    name: 'contact',
+    component: Contact,
+    },
+  ],
+
+
 })
 
-export default router
+export default router;

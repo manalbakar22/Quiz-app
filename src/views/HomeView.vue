@@ -6,10 +6,20 @@
       <router-link
                   class=""
                   :to="{ name: 'quiz' }"
-                  ><button class="button-28 mt-5" role="button">Get started</button>
+                  ><button class="button-28 mt-5" role="button">Pass by ID</button>
       </router-link>
+      <h3 class="my-1 mx-auto">Or</h3> 
+      <router-link
+                  class=""
+                  :to="{ name: 'costumize' }"
+                  ><button class="button-28 mt-3" role="button">Pass Random quiz</button>
+      </router-link>
+
+
        
     </div>
+
+
   </div>
 </template>
 
@@ -95,8 +105,8 @@
 .home {
   background: linear-gradient(to bottom, #2323cf, #8A8AFF);
   color: white;
-  height: 70vh;
-  opacity: 0; /* Set initial opacity to 0 */
+  height: 100vh;
+  opacity: 0; 
   animation: fadeIn 1.5s forwards; /* Apply the fadeIn animation */
 }
 

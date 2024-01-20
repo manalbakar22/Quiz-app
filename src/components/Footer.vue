@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark mt-6">
+    <div class="bg-dark mt-6 ">
     <div class="container py-4">
       <div class="text-center">
         <h5 class="textstyle text-lg font-weight-bold mb-2 text-white">Owner Contacts</h5>
@@ -16,14 +16,14 @@
         <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
           <a href="mailto:test@gmail.com" class="text-decoration-none text-light d-block mb-1">
             <i class="fas fa-at"></i>
-            <span class="ml-3">test@gmail.com</span>
+            <span class="ml-3 mx-2">test@gmail.com</span>
           </a>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-4 d-flex  justify-content-center ">
           <a href="https://www.linkedin.com/in/zaid-baarab-398256256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none text-light d-block mb-1">
             <i class="fab fa-linkedin"></i>
-            <span class="ml-3">  FSTE GI Students</span>
+            <span class="ml-3 mx-2">  FSTE GI Students</span>
           </a>
         </div>
       </div>
@@ -33,7 +33,7 @@
           <div class="text-white">
             <span>&copy;</span>
             <span class="text-white-500 font-weight-bold text-lg mx-1">C</span>
-            <span class="text-white">2023</span>
+            <span class="text-white">2024</span>
           </div>
         </div>
       </div>

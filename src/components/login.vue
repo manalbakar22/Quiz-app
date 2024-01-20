@@ -49,11 +49,15 @@
                 </form>
 
                 <form v-else>
-                  <h1>you are now in Register page </h1>
+                  <h1> Register now! </h1>
+                  <div v-if="userData.registered" class="alert alert-success">
+                     you register successfully
+                     <button  class="btn btn-primary" @click="goToLOgin()">Go to login</button>
+                  </div>
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                    <img src="../../public/safer.png" alt="safer image" class="mx-3 img-fluid" style="height: 60px;">
+                    <img src="../../public/IMG/QCM.JPEG" alt="safer image" class="mx-3 img-fluid" style="height: 60px;">
                   </div>
 
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
@@ -78,13 +82,6 @@
                     <input v-model="userData.age" type="number" id="age" class="form-control form-control-lg" />
                   </div>
 
-                  <div class="form-outline mb-4">
-                    <label class="form-label" for="role">Role : </label>
-                    <select v-model="userData.role" id="role" name="role">
-                      <option value="user">User</option>
-                      <option value="admin">Admin</option>
-                    </select>
-                  </div>
 
                   <div class="form-outline mb-4">
                     <input  v-model="userData.email" type="email" id="form2Example17" class="form-control form-control-lg" />
@@ -135,7 +132,8 @@ export default{
           profession: "",
           country: "",
           age: null,
-          role: "user"
+          role: "user",
+          registered: false,
         },
         loginData:{
           email: "",
@@ -157,6 +155,7 @@ export default{
       axios.post('http://localhost:5000/auth/register', this.userData)
         .then(response => {
           console.log('Response:', response.data);
+          this.userData.registered = true;
         })
         .catch(error => {
           // Handle errors if the registration fails
@@ -178,6 +177,10 @@ export default{
           console.error('Registration failed:', error.response.data);
       });
 
+    }
+    ,
+    goToLOgin(){
+      this.login=true;
     }
 
   }
