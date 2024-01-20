@@ -1,6 +1,6 @@
-# quizeupdated
+# quiz maker frontend project
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the user interface of our quiz maker website as a  mini project of web development  module using Vue js 3 with vite tool,  .
 
 ## Recommended IDE Setup
 
